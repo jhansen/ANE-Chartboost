@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3AA6DF8E-FD16-471D-89DB-86E6D5615799</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AirChartboost</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7345CBFE-C0C8-48D4-8B9B-A1378DF63519</key>
+		<string>https://github.com/tafh/ANE-Chartboost.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios/AirChartboost.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7345CBFE-C0C8-48D4-8B9B-A1378DF63519</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tafh/ANE-Chartboost.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7345CBFE-C0C8-48D4-8B9B-A1378DF63519</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7345CBFE-C0C8-48D4-8B9B-A1378DF63519</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ANE-Chartboost-freshplanet</string>
+		</dict>
+	</array>
+</dict>
+</plist>

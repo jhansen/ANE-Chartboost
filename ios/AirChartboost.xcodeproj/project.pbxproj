@@ -25,9 +25,10 @@
 		39CD1FC1160753D0006D8EB1 /* AirChartboost.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CD1FC0160753D0006D8EB1 /* AirChartboost.m */; };
 		39CD1FDA1607555D006D8EB1 /* Chartboost.h in Headers */ = {isa = PBXBuildFile; fileRef = 39CD1FD61607555D006D8EB1 /* Chartboost.h */; };
 		39CD1FDB1607555D006D8EB1 /* libChartboost.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CD1FD71607555D006D8EB1 /* libChartboost.a */; };
-		39CD1FDD160755FA006D8EB1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CD1FDC160755FA006D8EB1 /* StoreKit.framework */; };
+		39CD1FDD160755FA006D8EB1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CD1FDC160755FA006D8EB1 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		39CD1FDF1607560E006D8EB1 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39CD1FDE1607560E006D8EB1 /* GameKit.framework */; };
 		4AF5AE46172EC92A00015D93 /* FlashRuntimeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AF5AE45172EC92A00015D93 /* FlashRuntimeExtensions.h */; };
+		D8AA226118D8967700DF97E6 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AA226018D8967700DF97E6 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		39CD1FDC160755FA006D8EB1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		39CD1FDE1607560E006D8EB1 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		4AF5AE45172EC92A00015D93 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashRuntimeExtensions.h; path = ../FlashRuntimeExtensions.h; sourceTree = "<group>"; };
+		D8AA226018D8967700DF97E6 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AA226118D8967700DF97E6 /* AdSupport.framework in Frameworks */,
 				39CD1FDF1607560E006D8EB1 /* GameKit.framework in Frameworks */,
 				39CD1FDD160755FA006D8EB1 /* StoreKit.framework in Frameworks */,
 				39CD1F9F160753D0006D8EB1 /* Foundation.framework in Frameworks */,
@@ -107,6 +110,7 @@
 		39CD1F9D160753D0006D8EB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8AA226018D8967700DF97E6 /* AdSupport.framework */,
 				39CD1FD41607555D006D8EB1 /* Chartboost */,
 				39CD1F9E160753D0006D8EB1 /* Foundation.framework */,
 				39CD1FA0160753D0006D8EB1 /* CoreFoundation.framework */,

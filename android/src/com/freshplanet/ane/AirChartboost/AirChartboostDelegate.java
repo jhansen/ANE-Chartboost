@@ -307,4 +307,16 @@ public class AirChartboostDelegate implements ChartboostDelegate
 		AirChartboostExtension.log("Should request interstitials in first session? Yes.");
 		return true;
 	}
+	
+	/*
+	 * didFailToLoadUrl(String url)
+	 *
+	 * Called when a URL loaded by clicking on an interstitial or an app from the more apps page has failed to load due to either network problems, being unable to parse the URL, or Chartboost not finding a valid activity.
+	 * 
+	 */
+	@Override
+	public void didFailToLoadUrl(String url)
+	{
+ 		AirChartboostExtension.context.dispatchStatusEventAsync("DidFailToLoadUrl", "");
+	}
 }

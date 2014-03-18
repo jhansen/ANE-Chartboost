@@ -1,6 +1,8 @@
 package com.freshplanet.ane.AirChartboost;
 
 import com.chartboost.sdk.ChartboostDelegate;
+import com.chartboost.sdk.Model.CBError;
+import com.chartboost.sdk.Chartboost;
 
 public class AirChartboostDelegate implements ChartboostDelegate
 {
@@ -80,9 +82,9 @@ public class AirChartboostDelegate implements ChartboostDelegate
 	 * - No publishing campaign matches for this user (go make a new one in the dashboard)
 	 */
 	@Override
-	public void didFailToLoadInterstitial(String location)
+	public void didFailToLoadInterstitial(String location, CBError.CBImpressionError error)
 	{
-	    AirChartboostExtension.log("Did fail to load interstitial for location \""+location+"\".");
+	    AirChartboostExtension.log("Did fail to load interstitial for location \""+location+"\". Error: " + error);
 	    AirChartboostExtension.context.dispatchStatusEventAsync("DidFailToLoadInterstitial", location);
 	}
 
@@ -214,7 +216,7 @@ public class AirChartboostDelegate implements ChartboostDelegate
 	 * - No publishing campaign matches for this user (go make a new one in the dashboard)
 	 */
 	@Override
-	public void didFailToLoadMoreApps()
+	public void didFailToLoadMoreApps(CBError.CBImpressionError error)
 	{
 		AirChartboostExtension.log("Did fail to load More Apps.");
 		AirChartboostExtension.context.dispatchStatusEventAsync("DidFailToLoadMoreApps", "");
@@ -294,6 +296,19 @@ public class AirChartboostDelegate implements ChartboostDelegate
 		AirChartboostExtension.log("Did show More Apps.");
 		AirChartboostExtension.context.dispatchStatusEventAsync("DidShowMoreApps", "");
 	}
+	
+	/*
+	 * shouldPauseClickForConfirmation(Chartboost.CBAgeGateConfirmation callback) 
+	 *
+	 * Called after the user clicks on the ad.
+	 * 
+	 */
+	@Override
+	public boolean shouldPauseClickForConfirmation(Chartboost.CBAgeGateConfirmation callback)
+	{
+		AirChartboostExtension.log("ShouldPauseClickForConfirmation. No.");
+		return false;
+	}
 
 	/*
 	 * shouldRequestInterstitialsInFirstSession()
@@ -309,14 +324,15 @@ public class AirChartboostDelegate implements ChartboostDelegate
 	}
 	
 	/*
-	 * didFailToLoadUrl(String url)
+	 * didFailToRecordClick(String url, CBError.CBClickError)
 	 *
-	 * Called when a URL loaded by clicking on an interstitial or an app from the more apps page has failed to load due to either network problems, being unable to parse the URL, or Chartboost not finding a valid activity.
+	 * Called when a URL loaded by clicking on an interstitial or an app from the more apps page has failed to load, causing no recorded click on the Chartboost server.
 	 * 
 	 */
 	@Override
-	public void didFailToLoadUrl(String url)
+	public void didFailToRecordClick(String url, CBError.CBClickError error)
 	{
- 		AirChartboostExtension.context.dispatchStatusEventAsync("DidFailToLoadUrl", "");
+		AirChartboostExtension.log("Did fail to record click \""+url+"\".");
+ 		// AirChartboostExtension.context.dispatchStatusEventAsync("DidFailToLoadUrl", "");
 	}
 }

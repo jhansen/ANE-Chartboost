@@ -7,7 +7,7 @@ This is an [Air native extension](http://www.adobe.com/devnet/air/native-extensi
 Chartboost SDK
 ---------
 
-This ANE uses Chartboost SDK version 3.2.1 on iOS and 3.1.5 on Android.
+This ANE uses Chartboost SDK version 4.0 on iOS and 4.0 on Android.
 
 
 Installation

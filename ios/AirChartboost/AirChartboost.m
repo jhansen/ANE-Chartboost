@@ -215,7 +215,7 @@ DEFINE_ANE_FUNCTION(CBHasCachedInterstitial)
     }
     
     FREObject freObject;
-    FREResult freResult = FRENewObjectFromBool(YES, &freObject);
+    FREResult freResult = FRENewObjectFromBool(hasCachedInterstitial ? YES : NO, &freObject);
     if (freResult != FRE_OK)
     {
         NSLog(@"[AirChartboost] FREResult = %d", freResult);

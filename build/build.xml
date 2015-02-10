@@ -50,9 +50,9 @@
 
         <mkdir dir="../temp/android/"/>
         <jar basedir="../android/temp/classes" destfile="../temp/android/lib${name}.jar"/>
-        <copy todir="../temp/android/res/">
+        <!-- <copy todir="../temp/android/res/">
             <fileset dir="../android/res"/>
-        </copy>
+        </copy> -->
         <delete dir="../android/temp"/>
     </target>
 
@@ -96,6 +96,7 @@
             <arg line="-swc swc/${name}.swc"/>
             <arg line="-platform iPhone-ARM -platformoptions ../build/platform.xml -C ios/ ."/>
             <arg line="-platform Android-ARM -C android/ ."/>
+            <arg line="-platform Android-x86 -C android/ ."/>
             <arg line="-platform default -C default/ ."/>
         </exec>
 

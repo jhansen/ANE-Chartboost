@@ -35,6 +35,14 @@
             <finalizer>com.freshplanet.ane.AirChartboost.AirChartboostExtension</finalizer> 
         </applicationDeployment>
     </platform>
+
+   <platform name="Android-x86"> 
+        <applicationDeployment> 
+            <nativeLibrary>libAirChartboost.jar</nativeLibrary> 
+            <initializer>com.freshplanet.ane.AirChartboost.AirChartboostExtension</initializer> 
+            <finalizer>com.freshplanet.ane.AirChartboost.AirChartboostExtension</finalizer> 
+        </applicationDeployment>
+    </platform>
     
     <platform name="default"> 
         <applicationDeployment/> 

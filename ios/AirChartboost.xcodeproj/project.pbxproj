@@ -282,6 +282,7 @@
 		39CD1FC6160753D0006D8EB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/AirChartboost.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirChartboost/AirChartboost-Prefix.pch";
@@ -300,6 +301,7 @@
 		39CD1FC7160753D0006D8EB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/AirChartboost.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirChartboost/AirChartboost-Prefix.pch";
